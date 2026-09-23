@@ -7,7 +7,7 @@ public class CekDiskon {
         String member;
         System.out.print("masukkan status member dalam angka (Gold, Silver, Bronze, Reguler) = ");
         member = input.nextLine();
-        input.close();
+        
 
         if (member.equals("Gold")) {
             System.out.println("Diskon anda : 20%");
@@ -17,6 +17,8 @@ public class CekDiskon {
             System.out.println("Diskon anda : 10%");
         } else if (member.equals("Regular")) {
             System.out.println("Maaf, anda tidak mendapatkan diskon");
+
         }
+        input.close();
     }
 }
